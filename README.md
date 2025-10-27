@@ -59,7 +59,6 @@ GET /api/v1/users/
 ```http
 POST /api/v1/users/
 Content-Type: application/json
-
 {
   "email": "user@example.com",
   "full_name": "홍길동",

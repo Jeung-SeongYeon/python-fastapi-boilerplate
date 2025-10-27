@@ -2,9 +2,9 @@
 from typing import List
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
-from app.schemas.user_schemas import UserCreate, UserUpdate, UserResponse
-from app.core.user_service import UserService
-from app.api.deps import get_database
+from schemas.user_schemas import UserCreate, UserUpdate, UserResponse
+from core.user_service import UserService
+from api.deps import get_database
 
 router = APIRouter(prefix="/users", tags=["users"])
 

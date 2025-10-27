@@ -2,9 +2,9 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
-from app.api.v1 import users, items
-from app.database.session import init_db
-from app.database.models import Base
+from api.v1 import users, items
+from database.session import init_db
+from database.models import Base
 
 # FastAPI 앱 인스턴스 생성
 app = FastAPI(

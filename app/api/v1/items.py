@@ -2,9 +2,9 @@
 from typing import List
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
-from app.schemas.user_schemas import ItemCreate, ItemUpdate, ItemResponse
-from app.core.user_service import ItemService
-from app.api.deps import get_database
+from schemas.user_schemas import ItemCreate, ItemUpdate, ItemResponse
+from core.user_service import ItemService
+from api.deps import get_database
 
 router = APIRouter(prefix="/items", tags=["items"])
 

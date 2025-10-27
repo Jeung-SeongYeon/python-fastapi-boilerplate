@@ -2,7 +2,7 @@
 from typing import Generator
 from fastapi import Depends
 from sqlalchemy.orm import Session
-from app.database.session import get_db
+from database.session import get_db
 
 
 def get_database() -> Generator:

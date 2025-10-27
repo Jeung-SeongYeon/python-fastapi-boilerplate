@@ -1,8 +1,8 @@
 """사용자 서비스 - 비즈니스 로직"""
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from app.schemas.user_schemas import UserCreate, UserUpdate, ItemCreate, ItemUpdate, UserResponse, ItemResponse
-from app.crud.user_crud import UserRepository, ItemRepository
+from schemas.user_schemas import UserCreate, UserUpdate, ItemCreate, ItemUpdate, UserResponse, ItemResponse
+from crud.user_crud import UserRepository, ItemRepository
 from fastapi import HTTPException, status
 
 

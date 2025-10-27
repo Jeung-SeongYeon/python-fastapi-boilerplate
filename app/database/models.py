@@ -1,7 +1,7 @@
 """데이터베이스 모델 정의"""
 from sqlalchemy import Column, Integer, String, Boolean, DateTime
 from sqlalchemy.sql import func
-from app.database.session import Base
+from database.session import Base
 
 
 class User(Base):

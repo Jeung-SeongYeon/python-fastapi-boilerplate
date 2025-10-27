@@ -3,9 +3,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from typing import Generator
+import os
 
 # SQLite 데이터베이스 URL (프로덕션에서는 환경변수로 관리)
-SQLALCHEMY_DATABASE_URL = "sqlite:///./app.db"
+SQLALCHEMY_DATABASE_URL =os.getenv("DATABASE_URL")
 
 # 데이터베이스 엔진 생성
 engine = create_engine(

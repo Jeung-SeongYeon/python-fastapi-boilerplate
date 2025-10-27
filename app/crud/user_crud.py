@@ -1,8 +1,8 @@
 """사용자 CRUD 로직"""
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from app.database.models import User, Item
-from app.schemas.user_schemas import UserCreate, UserUpdate, ItemCreate, ItemUpdate
+from database.models import User, Item
+from schemas.user_schemas import UserCreate, UserUpdate, ItemCreate, ItemUpdate
 
 
 class UserRepository:
