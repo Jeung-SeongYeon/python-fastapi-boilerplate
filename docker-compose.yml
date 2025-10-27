@@ -5,9 +5,10 @@ services:
       dockerfile: Dockerfile
     container_name: python-fastapi-boilerplate
     ports:
-      - "8001:8000"
+      - "8000:8000"
     volumes:
       - ./app:/app
     env_file:
       - .env
     restart: always
+
