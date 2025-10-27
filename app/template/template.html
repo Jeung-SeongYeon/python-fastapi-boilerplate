@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Boilerplate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .link-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .link-card p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .features {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        
+        .features h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .feature-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 FastAPI Boilerplate</h1>
+        <p class="description">
+            빠른 개발을 위한 FastAPI 보일러플레이트입니다.
+        </p>
+        
+        <div class="links">
+            <a href="/docs" class="link-card">
+                <h3>📚 Swagger UI</h3>
+                <p>인터랙티브 API 문서</p>
+            </a>
+            <a href="/redoc" class="link-card">
+                <h3>📖 ReDoc</h3>
+                <p>세련된 API 문서</p>
+            </a>
+            <a href="/api/v1/users/" class="link-card">
+                <h3>👥 Users</h3>
+                <p>사용자 API</p>
+            </a>
+            <a href="/api/v1/items/" class="link-card">
+                <h3>📦 Items</h3>
+                <p>아이템 API</p>
+            </a>
+        </div>
+        
+        <div class="features">
+            <h2>✨ 프로젝트 구조</h2>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <strong>api/</strong>
+                    라우터 모음 (엔드포인트)
+                </li>
+                <li class="feature-item">
+                    <strong>core/</strong>
+                    비즈니스 로직 (서비스)
+                </li>
+                <li class="feature-item">
+                    <strong>crud/</strong>
+                    Repository + DTO 변환
+                </li>
+                <li class="feature-item">
+                    <strong>database/</strong>
+                    DB 연결 및 ORM 관리
+                </li>
+                <li class="feature-item">
+                    <strong>schemas/</strong>
+                    Request/Response DTO
+                </li>
+                <li class="feature-item">
+                    <strong>infra/</strong>
+                    유틸 및 설정
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
